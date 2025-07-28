@@ -203,6 +203,10 @@
 					</execution>
 				</executions>
 			</plugin>
+			<plugin>
+        		<groupId>com.github.danielflower.mavenplugins</groupId>
+        		<artifactId>multi-module-maven-release-plugin</artifactId>
+      		</plugin>
 		</plugins>
 	</build>
 
@@ -210,37 +214,38 @@
 		<repository>
 			<id>invesdwin-oss</id>
 			<name>invesdwin-oss</name>
-			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss/</url>
 		</repository>
 		<snapshotRepository>
 			<id>invesdwin-oss</id>
 			<name>invesdwin-oss</name>
-			<url>https://invesdwin.de/repo/invesdwin-oss</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
 	<repositories>
 		<repository>
 			<id>invesdwin-oss</id>
-			<url>https://invesdwin.de/repo/invesdwin-oss-remote</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss-remote/</url>
 		</repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
 			<id>invesdwin-oss</id>
-			<url>https://invesdwin.de/repo/invesdwin-oss-remote</url>
+			<url>http://192.168.178.43:8081/repository/invesdwin-oss-remote/</url>
 		</pluginRepository>
 	</pluginRepositories>
 
 	<scm>
-		<url>https://github.com/invesdwin/invesdwin-aspects</url>
-		<connection>scm:git:https://github.com/invesdwin/invesdwin-aspects.git</connection>
+		<url>https://github.com/matzejankow/invesdwin-aspects</url>
+		<connection>scm:git:https://github.com/matzejankow/invesdwin-aspects.git</connection>
 		<tag>HEAD</tag>
 	</scm>
 
+<!---
 	<ciManagement>
 		<system>jenkins</system>
 		<url>https://invesdwin.de/jenkins/job/dgr-deploy-invesdwin-aspects/</url>
 	</ciManagement>
-
+-->
 </project>
